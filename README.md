@@ -96,7 +96,21 @@ mv *_ee.json ~/.config/EasyEffects/output/
 
 That's it! Open EasyEffects, and you should now see all your converted presets in the "Output" preset list, ready to use.
 
----
+### 6. How to Refine the Conversion
+
+**Easy Effects** is essentially a complete rewrite of PulseEffects and uses **PipeWire** instead of **PulseAudio**. These are fundamentally different architectures for audio processing, each with its own advantages, limitations, and logic. This is why manual refinements are often necessary when converting presets.
+
+One of the biggest differences lies in how Easy Effects chains its modules and handles volume processing, including oversteering. In PulseEffects, you could often “max out” the volume and still get acceptable sound quality. However, the same behavior in Easy Effects can easily lead to severe distortion.
+
+Testing showed that with careful manual adjustments—especially in complex volume presets and a few minor effect parameters—it’s possible to get very close to the original PulseEffects sound. In some cases, the result matched 100%, and in others, it served as an excellent starting point for recreating the preset in Easy Effects.
+
+Using the `--volume-reset` option, which resets both input and output volume to **-9 dB** to prevent oversteering, provided the best results. This allowed me to fine-tune input and output levels so that the preset would perform as intended. However: -9 dB is just a safe starting point — not a universal fix.
+
+### ⚠️ Important Remark
+
+**Autogain**, **Gate**, and **Maximizer** settings are extremely sensitive in Easy Effects. Their parameterization differs significantly from PulseEffects, and I often had to reset them to their default values before recreating the settings from scratch. The original PulseEffects parameters tended to negatively affect the overall processing chain in Easy Effects.
+
+Maybe one day I’ll find the time to fine-tune this “last missing piece of the puzzle,” or perhaps a helpful contributor will lend a hand in perfecting these settings.
 
 ## Where to Get Help
 
