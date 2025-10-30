@@ -10,7 +10,7 @@ MIT License
 Copyright          (c) 2025 Lukas-Alexander
 Creator:           Lukas Alexander Pruski
 License:           MIT License
-GitHub Repository: https://github.com/[your-username]/pulseeffects-to-easyeffects-converter
+GitHub Repository: https://github.com/Lukas-Alexander/pulse-effects-2-easy-effects-converter/
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
