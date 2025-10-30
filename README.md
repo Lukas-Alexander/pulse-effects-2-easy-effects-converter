@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/)
-[![Version](https://img.shields.io/badge/version-0.6-blue.svg)](https://github.com/lukas-alexander/pulse-effects-2-easy-effects-converter)
+[![Version](https://img.shields.io/badge/version-1.1-blue.svg)](https://github.com/lukas-alexander/pulse-effects-2-easy-effects-converter)
 [![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/lukas-alexander/pulse-effects-2-easy-effects-converter)
 
 # PulseEffects to EasyEffects Preset Converter
